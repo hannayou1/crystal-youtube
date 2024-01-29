@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer id='footer' role='contentsinfo'>
-        footer
+       <a href='mailto:webstorybaoy@naver.com' rel='noopenner noreferrer'>webstorybaoy@naver.com</a>
     </footer>
   )
 }
