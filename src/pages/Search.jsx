@@ -23,7 +23,7 @@ const Search = () => {
     }, [searchId]);
 
     const fetchVideos = (query, pageToken = '') => {
-        fetchFromAPI(`search?part=snippet&q=${query}&pageToken=${pageToken}`)
+        fetchFromAPI(`search?part=snippet&type=video&q=${query}&pageToken=${pageToken}`)
         .then((data) => { 
             setNextPageToken(data.nextPageToken);
             setVideos((prevVideo) => [...prevVideo, ...data.items]);  //이전데이터에 그 다음 데이터 합쳐줘라
